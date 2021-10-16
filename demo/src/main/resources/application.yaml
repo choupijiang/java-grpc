@@ -1,0 +1,17 @@
+server:
+  port: 8081
+spring:
+  zipkin:
+    base-url: http://127.0.0.1:9411/
+    enabled: true
+  sleuth:
+    grpc:
+      enabled: true
+    sampler:
+      probability: 1
+  application:
+    name: caller
+grpc:
+  client:
+    helloworld:
+      address: 'discovery://127.0.0.1:9090'

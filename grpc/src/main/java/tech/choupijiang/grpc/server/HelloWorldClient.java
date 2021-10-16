@@ -1,4 +1,4 @@
-package com.example.demo.grpc;
+package tech.choupijiang.grpc.server;
 
 
 import com.codenotfound.grpc.helloworld.Greeting;
@@ -6,7 +6,6 @@ import com.codenotfound.grpc.helloworld.HelloWorldServiceGrpc;
 import com.codenotfound.grpc.helloworld.Person;
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
-import lombok.Data;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.stereotype.Component;
 

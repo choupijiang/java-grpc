@@ -1,4 +1,4 @@
-package com.example.demo.grpc;
+package tech.choupijiang.grpc.server;
 
 import com.codenotfound.grpc.helloworld.Greeting;
 import com.codenotfound.grpc.helloworld.HelloWorldServiceGrpc;
