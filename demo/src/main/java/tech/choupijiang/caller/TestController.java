@@ -10,11 +10,19 @@ import org.springframework.web.bind.annotation.RestController;
 public class TestController {
 
     @Autowired
-    private HelloWorldClient helloWorldClient;
+    private GrpcTraceClient helloWorldClient;
 
+    @Autowired
+    private HelloWorldClient helloWorldClient2;
 
     @PostMapping("/")
     public String test(){
         return helloWorldClient.sayHello("John", "Doe");
+    }
+
+
+    @PostMapping("/a/")
+    public String test2(){
+        return helloWorldClient2.sayHello("John", "Doe");
     }
 }
