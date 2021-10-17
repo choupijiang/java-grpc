@@ -1,0 +1,14 @@
+grpc:
+  port: 9090
+spring:
+  zipkin:
+    base-url: http://127.0.0.1:9411/
+    enabled: true
+  sleuth:
+    grpc:
+      enabled: true
+    enabled: true
+    sampler:
+      probability: 1
+  application:
+    name: server
