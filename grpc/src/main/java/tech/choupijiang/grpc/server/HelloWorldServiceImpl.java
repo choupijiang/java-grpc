@@ -19,20 +19,24 @@ public class HelloWorldServiceImpl extends HelloWorldServiceGrpc.HelloWorldServi
     TestController controller;
 
 
+    @Autowired
+    EchoClient client;
+
     @Override
     public void sayHello(Person request,
                          StreamObserver<Greeting> responseObserver) {
         log.info("server received {}", request);
 
-        System.out.println(controller.test());
+        System.out.println(controller.test("test"));
 
         String message = "Hello " + request.getFirstName() + " "
                 + request.getLastName() + "!";
         Greeting greeting =
                 Greeting.newBuilder().setMessage(message).build();
         log.info("server responded {}", greeting);
-
+        client.echo("china");
         responseObserver.onNext(greeting);
         responseObserver.onCompleted();
     }
+
 }

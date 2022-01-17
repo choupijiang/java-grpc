@@ -9,8 +9,8 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>tech.choupijiang</groupId>
-	<artifactId>grpc-server1</artifactId>
-	<name>grpc-server1</name>
+	<artifactId>grpc-server2</artifactId>
+	<name>grpc-server2</name>
 	<version>1.0</version>
 	<description>Demo project for Spring Boot</description>
 	<properties>
@@ -44,22 +44,12 @@
 			<artifactId>spring-cloud-starter-zipkin</artifactId>
 			<version>2.1.3.RELEASE</version>
 		</dependency>
-		<dependency>
-			<groupId>tech.choupijiang</groupId>
-			<artifactId>grpc-server2</artifactId>
-			<version>1.0</version>
-		</dependency>
+
 
 		<dependency>
 			<groupId>io.zipkin.brave</groupId>
 			<artifactId>brave-instrumentation-grpc</artifactId>
 			<version>5.7.0</version>
-		</dependency>
-		<dependency>
-			<groupId>tech.choupijiang</groupId>
-			<artifactId>grpc-server2</artifactId>
-			<version>1.0</version>
-			<scope>compile</scope>
 		</dependency>
 
 	</dependencies>

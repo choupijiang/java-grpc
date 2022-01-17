@@ -30,7 +30,7 @@
 
 		<dependency>
 			<groupId>tech.choupijiang</groupId>
-			<artifactId>grpc-server</artifactId>
+			<artifactId>grpc-server1</artifactId>
 			<version>1.0</version>
 		</dependency>
 
