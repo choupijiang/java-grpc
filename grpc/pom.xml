@@ -15,7 +15,7 @@
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>1.8</java.version>
-		<grpc-spring-boot-starter.version>3.0.0</grpc-spring-boot-starter.version>
+		<grpc-spring-boot-starter.version>3.5.7</grpc-spring-boot-starter.version>
 		<os-maven-plugin.version>1.6.1</os-maven-plugin.version>
 		<protobuf-maven-plugin.version>0.6.1</protobuf-maven-plugin.version>
 	</properties>
